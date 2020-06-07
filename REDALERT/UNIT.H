@@ -71,8 +71,8 @@ class UnitClass :	public DriveClass
 		** This is a count of the # of loads of the various minerals that the
 		** unit has harvested.
 		*/
-		unsigned Gold:5;
-		unsigned Gems:5;
+		int Gold;
+		int Gems;
 
 		/*
 		** This flag tells a unit that, if after reaching its destination, it

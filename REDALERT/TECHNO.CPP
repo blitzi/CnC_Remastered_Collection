@@ -5858,7 +5858,6 @@ void TechnoClass::Draw_Pips(int x, int y, WindowNumberType window) const
 			int greenpips  = pips * fixed(nickel, Rule.BailCount);
 
 			while (greenpips + graypips < pips) {
-				int ironnickelmax = max(iron, nickel);
 				if (iron > nickel) {
 					graypips++;
 				} else {

@@ -3907,7 +3907,7 @@ int UnitClass::Pip_Count(void) const
 	}
 
 	if (*this == UNIT_HARVESTER) {
-		return((Gold + Gems) / 4);
+		return Class->Max_Pips() * fixed(Gold + Gems, Rule.BailCount);
 	}
 
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98
